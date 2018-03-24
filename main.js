@@ -10,7 +10,7 @@ function getfile(file,callback){
   xhr.send();
 }
 
-getfile("resources/data.json",function(text){
+getfile("data.json",function(text){
   let data=JSON.parse(text);
   console.log(data);
   career(data.basics);
